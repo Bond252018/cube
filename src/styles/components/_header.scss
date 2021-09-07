@@ -1,0 +1,49 @@
+.header {
+	border-bottom: 1px solid #d9d9d9;
+
+	@media #{$sm-max} {
+		border: none;
+	}
+
+	&.dark-header {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		background: rgba(0,0,0,.5);
+	}
+	
+	.container {
+		@media #{$sm-max} {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	@media #{$sm-max} {
+		padding: 15px 0;
+	}
+
+	@media #{$xs-max} {
+		padding: 10px 0;
+	}
+
+	.logo {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 56px;
+
+		@media #{$sm-max} {
+			margin: 0;
+		}
+
+		@media #{$xs-max} {
+			max-width: 100px;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+}

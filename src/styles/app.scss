@@ -1,0 +1,32 @@
+//components
+@import "components/variables";
+@import "components/mixins";
+@import "components/normalizer";
+@import "components/buttons";
+@import "components/fonts";
+@import "components/typography";
+@import "components/elements";
+@import "components/forms";
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/layout';
+@import 'components/top-section';
+@import 'components/navigation';
+@import 'components/grid';
+@import 'components/gallery';
+@import 'components/about-section';
+@import 'components/contact-section';
+@import 'components/photo-section';
+@import 'components/items';
+@import 'components/owl-carousel-custom';
+@import 'components/social-list';
+@import 'components/photo-section';
+
+@import 'pages/home';
+@import 'pages/contacts';
+@import 'pages/farm';
+@import 'pages/corporate';
+@import 'pages/wedding';
+@import 'pages/menu';
+@import 'pages/brif';

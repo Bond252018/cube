@@ -1,0 +1,68 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	position: relative;
+	font-family: $default-font;
+	font-size: $default-font-size;
+	font-weight: $default-font-weight;
+	font-style: $default-font-style;
+	line-height: $default-line-height;
+	color: $default-text-color;
+	background-color: $body-bg;
+	min-width: 320px;
+}
+
+.layout {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}
+
+.main {
+	padding-bottom: 100px;
+
+	@media #{$xs-max} {
+		padding-bottom: 40px;
+	}
+}
+
+.section {
+	padding: 80px 0;
+
+	@media #{$md-max} {
+		padding: 40px 0;
+	}
+
+	@media #{$xm-max} {
+		padding: 20px 0;
+	}
+}
+
+.container {
+	max-width: 1700px;
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	@media #{$xs-max} {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	&.container-small {
+		max-width: 1200px;
+	}
+}
+
+
+.clearfix {
+	&:before,
+	&:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+}

@@ -1,0 +1,201 @@
+.menu-page {
+
+    .catalog-section {
+        background-image: url(../images/menu.jpg);
+    }
+
+    .title-block {
+        margin-top: 100px;
+        background: rgba(0, 0, 0, .5);
+        padding: 17px 19px 23px 17px;
+
+        h1 {
+            font-family: Minion-Pro;
+            padding-top: 115px;
+            padding-bottom: 113px;
+            font-size: 60px;
+            font-weight: bold;
+            color: #fff;
+
+            @media #{$xs-max} {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                font-size: 20px;
+            }
+
+            @media #{$sm-max} {
+                font-size: 30px;
+            }
+
+            @media #{$md-max} {
+                font-size: 30px;
+            }
+        }
+
+        .border-block {
+            display: block;
+
+            &:after {
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    .slider-section {
+
+        .shadow-bloсk {
+            box-shadow: -1px 19px 40px 4px rgba(0, 0, 0, .15);
+        }
+
+        .lines-text {
+            text-align: center;
+            max-width: 634px;
+            margin: 0 auto;
+            font-size: 20px;
+
+            &:before {
+                content: '';
+                display: block;
+                width: 135px;
+                height: 2px;
+                background: #ac8b59;
+                margin: 49px auto;
+            }
+        }
+        .block-text {
+            padding: 0 30px;
+
+            @media #{$xs-max} {
+                height: 470px;
+                padding: 0 15px;
+            }
+        }
+
+        h2 {
+            color: #caa15b;
+            text-align: center;
+            font-size: 36px;
+            padding-top: 135px;
+
+            @media #{$md-max} {
+                padding-top: 50px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .conditions-section {
+
+        .border-text {
+            max-width: 100%;
+            text-align: left;
+
+            @media #{$xs-max} {
+                padding-left: 6px;
+            }
+        }
+
+        .container-small {
+            max-width: 990px;
+            position: relative;
+        }
+    }
+
+    .block-conditions {
+        box-shadow: -1px 19px 40px 4px rgba(0, 0, 0, .15);
+        padding-bottom: 150px;
+        margin-bottom: 120px;
+        position: relative;
+        padding-top: 135px;
+
+        @media #{$xs-max} {
+            padding-top: 60px;
+            padding-bottom: 25px;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+
+        @media #{$md-max} {
+            padding: 15px 15px 75px;
+        }
+
+        @media #{$sm-max} {
+            margin-bottom: 50px;
+        }
+
+        p {
+            font-size: 28px;
+            font-style: italic;
+            font-weight: bold;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #caa15b;
+            text-align: center;
+        }
+
+        .number {
+            top: 0;
+            left: 40px;
+            transform: none;
+            line-height: 1.3;
+            font-size: 400px;
+            color: #f7f1e7;
+            z-index: -1;
+        }
+    }
+
+    .price-list {
+        padding: 0;
+
+        li {
+            position: relative;
+            list-style-type: none;
+            padding-left: 50px;
+            font-size: 28px;
+            font-style: italic;
+            margin-bottom: 27px;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            @media #{$md-max} {
+                font-size: 25px;
+            }
+
+            @media #{$sm-max} {
+                padding-left: 20px;
+            }
+
+            @media #{$xs-max} {
+                font-size: 18px;
+            }
+
+
+            &:before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 12px;
+                height: 12px;
+                top: 15px;
+                left: 0;
+                background: #ac823a;
+                border-radius: 50%;
+
+                @media #{$md-max} {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}
+
+

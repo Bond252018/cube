@@ -1,0 +1,42 @@
+.brand-section {
+	height: 100vh;
+	padding-top: 277px;
+	background: url(../images/main-bg.jpg) center;
+	background-size: cover;
+	text-align: center;
+	display: flex;
+    align-items: center;
+
+	@media #{$sm-max} {
+		height: auto;
+		padding: 200px 0 100px;
+	}
+
+	@media #{$xs-max} {
+		padding: 150px 0;
+	}
+
+	h1 {
+		margin-bottom: 230px;
+
+		@media #{$lg-max} {
+			margin-bottom: 100px;
+		}
+
+		@media #{$xs-max} {
+			margin-bottom: 50px;
+		}
+	}
+
+	.text-holder {
+		font: 40px/43px $gogol;
+		color: $white;
+		max-width: 840px;
+		margin: 0 auto;
+
+		@media #{$xs-max} {
+			font-size: 25px;
+			line-height: 31px;
+		}
+	}
+}

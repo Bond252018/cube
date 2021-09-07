@@ -1,0 +1,96 @@
+.wedding-page {
+    .brand-section {
+        background-image: url(../images/wedding-bg.jpg);
+    }
+
+    .about-section {
+
+        .about-block {
+            margin-bottom: 202px;
+
+            @media #{$sm-max} {
+                margin-bottom: 50px;
+            }
+        }
+
+        h3 {
+            color: #fff;
+            text-transform: none;
+        }
+        .title-holder {
+
+            &:after {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+.about-wedding-section {
+    .icon-holder {
+        margin-bottom: 60px;
+
+        @media #{$xs-max} {
+            margin-bottom: 30px;
+        }
+    }
+    p {
+        font-size: 24px;
+
+        @media #{$xs-max} {
+            padding: 0 10px;
+        }
+    }
+}
+
+.choose-menu-section {
+
+    .title-lines:after,
+    .title-lines:before {
+
+        @media #{$sm-max} {
+            width: 70px;
+        }
+        @media #{$md-max} {
+            width: 60px;
+        }
+
+        @media #{$xs-max} {
+            width: 10px;
+        }
+    }
+
+    h2 {
+
+        @media #{$sm-max} {
+            font-size: 30px;
+        }
+
+        @media #{$xs-max} {
+            font-size: 18px;
+        }
+    }
+
+    h3 {
+        text-transform: none;
+    }
+
+    .item-holder {
+        display: block;
+        font-size: 0;
+
+        .item {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+        }
+    }
+    .btn-holder {
+        margin-top: 140px;
+
+        @media #{$sm-max} {
+            margin-top: 50px;
+        }
+    }
+}
+

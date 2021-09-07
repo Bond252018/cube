@@ -1,0 +1,52 @@
+.about-block {
+	display: inline-block;
+	vertical-align: top;
+	width: 33.3%;
+	padding: 0 50px;
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 100px;
+
+	@media #{$lg-max} {
+		font-size: 18px;
+		margin-bottom: 50px;
+		padding: 0 30px;
+	}
+
+	@media #{$sm-max} {
+		width: 50%;
+	}
+
+	@media #{$xs-max} {
+		width: 100%;
+		padding: 0 10px;
+		margin-bottom: 25px;
+	}
+
+	.icon {
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 55px;
+		display: flex;
+	    justify-content: center;
+		align-items: center;
+
+		@media #{$lg-max} {
+			margin-bottom: 25px;
+		}
+
+		@media #{$xs-max} {
+			max-width: 70px;
+			margin: 0 auto 15px;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	h3 {
+		color: $brand-color;
+		text-transform: uppercase;
+	}
+}

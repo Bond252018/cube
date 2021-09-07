@@ -1,0 +1,127 @@
+.contact-page-section {
+    padding: 80px 0 0;
+
+    .map-holder {
+        margin-bottom: 94px;
+        display: block;
+
+        @media #{$xs-max} {
+            margin-bottom: 45px;
+        }
+    }
+
+    p {
+        color: #8e8e8e;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .btn-primary {
+        margin-bottom: 25px;
+    }
+
+    .contact-list {
+        li {
+            text-transform: uppercase;
+        }
+
+
+    }
+
+    .socials-list {
+        text-align: center;
+        list-style: none;
+        margin-top: 105px;
+        margin-bottom: 107px;
+        padding: 0;
+
+        @media #{$md-max} {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 45px;
+            background: #c89f57;
+            font-size: 35px;
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            border-radius: 100px;
+            border: none;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            @media #{$xs-max} {
+                margin-right: 15px;
+            }
+
+        }
+
+        a {
+            color: #fff;
+            line-height: 55px;
+            width: 55px;
+            height: 55px;
+            font-size: 30px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.contact-list {
+    font-size: 0;
+    padding: 0;
+    margin-bottom: 75px;
+
+
+    @media #{$md-max} {
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .text {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    li {
+        display: inline-block;
+        vertical-align: top;
+        list-style: none;
+        width: 33.3%;
+        font-size: 24px;
+
+        @media #{$xl-max} {
+            margin-bottom: 10px;
+        }
+
+        @media #{$md-max} {
+            width: auto;
+            margin: 0 25px 10px 0;
+            font-size: 20px;
+        }
+
+        @media #{$xs-max} {
+            margin:0 0 10px 0;
+            font-size: 20px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: #161618
+    }
+
+    img {
+        float: left;
+        margin-right: 15px;
+    }
+}
+
+
+
+
+

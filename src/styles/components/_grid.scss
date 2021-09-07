@@ -1,0 +1,23 @@
+.row {
+	display: flex;
+
+	@media #{$sm-max} {
+		flex-direction: column;
+	}
+
+	.col-6 {
+		width: 50%;
+
+		@media #{$sm-max} {
+			width: 100%;
+		}
+	}
+}
+
+.d-flex {
+	display: flex;
+}
+
+.justify-space-between {
+	justify-content: space-between;
+}

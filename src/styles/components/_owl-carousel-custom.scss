@@ -1,0 +1,275 @@
+.owl-carousel {
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+
+    .owl-stage-outer {
+        overflow: hidden;
+    }
+
+    .owl-item {
+        float: left;
+
+        img {
+            max-width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .owl-dots {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .owl-dot {
+        width: 12px;
+        height: 12px;
+        background: #f4ece3;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 6px;
+        border: none;
+        padding: 0;
+
+        &.active {
+            background: $brand-color;
+        }
+    }
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -100px;
+
+    .owl-prev,
+    .owl-next {
+        cursor: pointer;
+        user-select: none;
+        background: transparent;
+        border: none;
+        display: block;
+        background: url(../images/prev.png);
+        width: 45px;
+        height: 80px;
+
+        span {
+            display: none;
+        }
+
+        &:focus {
+            outline: none;
+            border: none;
+        }
+    }
+
+    .owl-prev {
+        position: absolute;
+        outline: none;
+    }
+
+    .owl-next {
+        position: absolute;
+        right: 20px;
+        background: url(../images/next.png);
+    }
+
+}
+
+.disabled {
+    display: none;
+}
+
+.full-carousel {
+    .owl-stage-outer {
+        height: calc(100vh - 200px);
+
+        @media #{$lg-max} {
+            height: calc(100vh - 140px);
+        }
+
+        @media #{$sm-max} {
+            height: calc(600px - 200px);
+        }
+    }
+
+    .owl-item,
+    .owl-stage {
+        height: 100%;
+    }
+
+    .owl-item {
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .owl-prev,
+    .owl-next {
+
+        @media #{$xs-max}{
+            background: none;
+        }
+    }
+
+    .owl-dot {
+        background: #f4ece3;
+
+        &:hover {
+            background: #ca9f72;
+        }
+    }
+
+    .owl-dots {
+        padding: 60px 0;
+
+        @media #{$lg-max} {
+            padding: 30px 0;
+        }
+    }
+
+    .owl-nav {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        margin-top: -100px;
+    }
+}
+
+.info-carousel {
+    position: relative;
+
+    .item {
+        padding: 5px 23px 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .owl-nav {
+        .owl-prev,
+        .owl-next {
+            cursor: pointer;
+            user-select: none;
+            background: transparent;
+            border: none;
+            display: block;
+            background: url(../images/arrow-prev1.png) no-repeat;
+            width: 45px;
+            height: 80px;
+            top: 50%;
+
+            @media #{$sm-max} {
+                background: none;
+            }
+
+            span {
+                display: none;
+            }
+
+            &:focus {
+                outline: none;
+                border: none;
+            }
+        }
+
+        .owl-prev {
+            position: absolute;
+            left: -30px;
+
+            &:hover {
+                background: url(../images/arrow-prev2.png) no-repeat;
+
+                @media #{$sm-max} {
+                    background: none;
+                }
+            }
+        }
+
+        .owl-next {
+            position: absolute;
+            right: -30px;
+            background: url(../images/arrow-next1.png) no-repeat;
+
+            @media #{$sm-max} {
+                background: none;
+            }
+
+            &:hover {
+                background: url(../images/arrow-next2.png) no-repeat;
+
+                @media #{$sm-max} {
+                    background: none;
+                }
+            }
+        }
+    }
+
+    .owl-dot {
+        background: #fff;
+        border: 1px solid #b79975;
+
+        &:hover {
+            background: $brand-color;
+        }
+
+    }
+
+}
+
+.wedding-carousel {
+    padding-top: 100px;
+
+    @media #{$xs-max}{
+        padding: 30px 15px 0;
+    }
+
+    .owl-prev,
+    .owl-next {
+
+        @media #{$xs-max}{
+            background: none;
+        }
+    }
+
+    .owl-item {
+        @media #{$sm-min} {
+            opacity: .5;
+        }
+
+        .text-holder {
+            @media #{$sm-min} {
+                opacity: 0;
+            }
+        }
+
+        &.active {
+
+            &.center {
+                opacity: 1;
+
+                .text-holder {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .img-holder {
+        margin-bottom: 63px;
+
+        @media #{$xs-max} {
+            margin-bottom: 30px;
+        }
+    }
+
+    .border-bottom-left {
+        margin: 0 0 40px;
+    }
+}

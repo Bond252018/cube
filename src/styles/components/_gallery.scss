@@ -1,0 +1,18 @@
+.grid-sizer,
+.grid-item {
+	width: 33.333%;
+}
+
+.grid-item {
+	float: left;
+	padding: 15px;
+
+	@media #{$xs-max} {
+		padding: 5px;
+	}
+}
+
+.grid-item img {
+	display: block;
+	max-width: 100%;
+}

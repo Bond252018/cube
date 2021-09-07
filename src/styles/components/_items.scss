@@ -1,0 +1,40 @@
+.item-holder {
+	display: flex;
+
+	@media #{$xs-max} {
+		flex-direction: column;
+	}
+
+	.item {
+		width: 33.3%;
+		padding: 15px 15px 30px;
+		background: $white;
+		margin: 0 10px;
+		text-align: center;
+		border: 2px solid transparent;
+		position: relative;
+		transition: transform .75s;
+		margin: 0;
+
+		@media #{$md-max} {
+			padding: 10px 0 15px;
+		}
+
+		&:hover {
+			@media #{$lg-min} {
+				border-color: $brand-color;
+				box-shadow: 0 17px 32px rgba(150,109,42,.15);
+				transform: scale(1.1);
+				z-index: 100;
+
+				.block-more {
+					opacity: 1;
+				}
+			}
+		}
+
+		@media #{$sm-max} {
+			width: 100%;
+		}
+	}
+}

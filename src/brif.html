@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+//= templates/head.html
+
+<body>
+
+
+<div class="layout brif-page">
+
+    //= templates/header.html
+
+    <main class="main">
+        <section class="section form-section">
+            <div class="container">
+                <form class="form-brif" action="">
+                    <h2>Бриф на проведение мероприятия</h2>
+                    <div class="block-item border-bottom">
+                        <div class="row ">
+                            <div class="col-6">
+                                <div class="form-holder ">
+                                    <input type="text" class="form-control">
+                                    <label for="name" class="description">Название организации</label>
+                                </div>
+                                <div class="form-holder">
+                                    <input type="text" class="form-control">
+                                    <label for="" class="description">Мобильный телефон</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-holder">
+                                    <input type="text" class="form-control">
+                                    <label for="" class="description">Ответственный(ФИО)</label>
+                                </div>
+                                <div class="form-holder">
+                                    <input type="text" class="form-control ">
+                                    <label for="" class="description">Электронная почта</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Основная информация</h3>
+                    <div class="block-item border-bottom">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-holder">
+                                    <input type="text" class="form-control">
+                                    <label for="" class="description">Название мероприятия</label>
+                                </div>
+                                <div class="form-holder">
+                                    <input type="text" class="form-control">
+                                    <label for="" class="description">Формат</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-holder">
+                                    <input type="text" class="form-control">
+                                    <label for="" class="description">Дата посещения</label>
+                                </div>
+                                <div class="form-holder">
+                                    <input type="text" class="form-control">
+                                    <label for="" class="description">Время проведения</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-item border-bottom">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-holder">
+                                    <input type="text" class="form-control">
+                                    <label for="" class="description">Количество гостей</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-holder">
+                                    <select name="nutrition" class="form-control">
+                                        <option>Банкет</option>
+                                        <option>Фуршет</option>
+                                        <option>Кофе-брейк</option>
+                                        <option>Комплексный обед</option>
+                                        <option>Шведский стол</option>
+                                        <option>Без питания</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Дополнительная информация</h3>
+                    <textarea class="form-control" placeholder="Описание"></textarea>
+                    <div class="custom-control custom-checkbox">
+                        <input type="radio" class="radio" id="radio"/>
+                        <label for="radio"><p>Согласие на обработку персональных данных</p></label>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Отправить" placeholder="Комментарий">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    //= templates/footer.html
+
+</div>
+</body>
+</html>

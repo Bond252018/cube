@@ -1,0 +1,22 @@
+.halls-page {
+	.info-list {
+		padding: 0;
+		list-style: none;
+
+		li {
+			margin-bottom: 25px;
+		}
+
+		img {
+			margin-left: 20px;
+		}
+	}
+}
+
+.halls-section {
+	position: relative;
+
+	.text-holder {
+		left-right: 100px;
+	}
+}

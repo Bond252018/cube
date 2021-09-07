@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Minion-Pro';
+  src: url('../fonts/Minion-Pro/MinionPro-Regular.woff2') format('woff2'),
+       url('../fonts/Minion-Pro/MinionPro-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Minion-Pro';
+	src:url('../fonts/Minion-Pro/MinionPro-Bold.woff2') format('woff2'),
+		url('../fonts/Minion-Pro/MinionPro-Bold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gogol';
+	src: url('../fonts/Gogol/Gogol.woff2') format('woff2'),
+		url('../fonts/Gogol/Gogol.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
